@@ -1,0 +1,62 @@
+.authButton {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    height: 40px;
+    width: 130px;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid #76b743;
+    color: #76b743;
+    font-weight: bold;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.logoutButton {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    height: 40px;
+    width: 130px;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid #76b743;
+    color: #76b743;
+    font-weight: bold;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.authButton:hover {
+    color: white;
+    background: #76b743;
+}
+
+.authButton:active {
+    letter-spacing: 2px;
+}
+
+.regButton {
+    position: absolute;
+    right: 150px;
+    top: 30px;
+    height: 40px;
+    width: 130px;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid #76b743;
+    color: #76b743;
+    font-weight: bold;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.regButton:hover {
+    color: white;
+    background: #76b743;
+}
+
+.regButton:active {
+    letter-spacing: 2px;
+}

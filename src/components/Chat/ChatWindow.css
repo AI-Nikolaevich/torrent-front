@@ -1,0 +1,10 @@
+.chat_image {
+    width: 70px;
+    cursor: pointer;
+}
+
+.main .chat_image {
+    position: absolute;
+    top: 2%;
+    right: 290px;
+}

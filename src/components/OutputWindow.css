@@ -1,0 +1,186 @@
+ul {
+    list-style-type: none;
+    /* Убирает маркеры у элементов списка */
+    padding-left: 0;
+    /* Убирает отступ слева */
+    margin: 0;
+    /* Убирает внешние отступы */
+}
+
+.OutputWindow {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head button{
+    position: absolute;
+    top:3%;
+    right:1%;
+}
+
+.table {
+    padding: 0 80px;
+}
+
+table {
+    padding: 15px;
+    border-spacing: 0px;
+}
+
+.table span {
+    margin-left: 15px;
+    font-size: 13px;
+
+}
+
+.table thead th {
+    border-top: 2px solid #716561;
+    border-bottom: 2px solid #716561;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444441;
+}
+
+.table tbody td {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444441;
+    border-bottom: 1px solid #716561;
+}
+
+.peers,
+.seeders,
+.center {
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table thead .peers {
+    font-weight: bold;
+
+    color: rgb(255, 91, 91);
+
+}
+
+.table thead .seeders {
+    cursor: pointer;
+    color: #76b743;
+    font-weight: bold;
+}
+
+.table tbody .peers {
+    color: rgb(255, 91, 91);
+}
+
+.table tbody .seeders {
+    color: #76b743;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table tbody img {
+    width: 30px;
+}
+
+.table .start {
+    text-align: start;
+}
+
+.table .red {
+    color: red;
+}
+
+@media (max-width: 800px) {
+
+    .table {
+        padding: 30px 15px;
+    }
+
+    .table span {
+        border-bottom: 2px solid #000000;
+    }
+
+    .table table,
+    .table thead,
+    .table tbody,
+    .table tr,
+    .table td,
+    .table th {
+        display: block;
+        width: 100%;
+    }
+
+    .table .adapt {
+        border-bottom: 2px solid #000000;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+
+    .table td:nth-of-type(1)::before {
+        content: "Название:";
+    }
+
+    .table td:nth-of-type(2)::before {
+        content: "Size:";
+    }
+
+    .table td:nth-of-type(3)::before {
+        content: "Source:";
+    }
+
+    .table td:nth-of-type(4)::before {
+        content: "Seeders:";
+    }
+
+    .table td:nth-of-type(5)::before {
+        content: "Peers:";
+    }
+
+    .table td:nth-of-type(6)::before {
+        content: "Download:";
+    }
+
+    .table td:nth-of-type(4) a {
+        display: inline-block;
+        margin-left: auto;
+    }
+}

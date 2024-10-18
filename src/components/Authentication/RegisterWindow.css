@@ -1,0 +1,94 @@
+.register {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 50px 50px 50px;
+    background: #fff;
+    gap: 20px;
+    box-shadow: 1px 1px 333px #76b743;
+    border-radius: 25px;
+}
+
+
+.register h2 {
+    font-weight: 500;
+    border-left: 15px solid #76b743;
+    line-height: 1em;
+    transition: 0.5s;
+    color: #333;
+    padding-left: 10px;
+    background: #fff;
+
+}
+
+.register .inputBox {
+    position: relative;
+}
+
+.register .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.register .inputBox input#btn {
+    color: #76b743;
+    background: #fff;
+    border: solid 2px #76b743;
+    transition: 0.5s;
+    font-size: 1.4em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.register .inputBox input#btn:hover {
+    background: #76b743;
+
+    color: #ffffff;
+    border: solid 2px #f1f1f1;
+}
+
+.register .inputBox input#btn:active {
+    letter-spacing: 2px;
+}
+
+.register .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register .group a {
+    color: #333;
+    text-decoration: none;
+}
+
+.register .group a:nth-child(2) {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.register .h4Ok {
+    color: red;
+    background-color: #fff;
+}
+
+.register .h4noOk {
+    color: #76b743;
+    background-color: #fff;
+}

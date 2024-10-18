@@ -1,0 +1,83 @@
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    background: #fff;
+    gap: 20px;
+    border-radius: 25px;
+}
+
+.login h2 {
+    font-weight: 500;
+    border-left: 15px solid #76b743;
+    line-height: 1em;
+    transition: 0, 5s;
+    padding-left: 10px;
+    background: #fff;
+
+}
+
+.login .inputBox {
+    position: relative;
+}
+
+.login .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: 2px solid #555;
+    font-size: 1em;
+    border: 1px solid #ccc;
+}
+
+
+.login .inputBox input#btn {
+    color: #76b743;
+    background: #fff;
+    border: solid 2px #76b743;
+    transition: 0.5s;
+    font-size: 1.4em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login .inputBox input#btn:hover {
+    background: #76b743;
+    color: #ffffff;
+}
+
+.login .inputBox input#btn:active {
+    letter-spacing: 2px;
+}
+
+.login .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .group a {
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    background: #fff;
+}
+
+.login .group a :hover {
+    text-decoration: solid;
+    cursor: none;
+}
+
+.close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.close:hover {
+    cursor: pointer;
+}
